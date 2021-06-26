@@ -1,3 +1,3 @@
-# keyformats
+# KeyFormats
 
 Turning stupid things into seckeys.
