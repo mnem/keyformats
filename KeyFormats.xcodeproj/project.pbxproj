@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB2E7565268BB1B80073C5DB /* RSAKeyParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2E7564268BB1B80073C5DB /* RSAKeyParser.m */; };
+		BB2E7568268BB4F20073C5DB /* NSMutableData+TLV.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2E7567268BB4F20073C5DB /* NSMutableData+TLV.m */; };
+		BB2E756A268BC2DC0073C5DB /* RSAKeyParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2E7569268BC2DC0073C5DB /* RSAKeyParserTests.swift */; };
 		BBDFECC22687352200BCDB19 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBDFECC12687352200BCDB19 /* AppDelegate.m */; };
 		BBDFECC52687352200BCDB19 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBDFECC42687352200BCDB19 /* SceneDelegate.m */; };
 		BBDFECC82687352200BCDB19 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBDFECC72687352200BCDB19 /* ViewController.m */; };
@@ -30,6 +33,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB2E7563268BB1B80073C5DB /* RSAKeyParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSAKeyParser.h; sourceTree = "<group>"; };
+		BB2E7564268BB1B80073C5DB /* RSAKeyParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSAKeyParser.m; sourceTree = "<group>"; };
+		BB2E7566268BB4F20073C5DB /* NSMutableData+TLV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableData+TLV.h"; sourceTree = "<group>"; };
+		BB2E7567268BB4F20073C5DB /* NSMutableData+TLV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableData+TLV.m"; sourceTree = "<group>"; };
+		BB2E7569268BC2DC0073C5DB /* RSAKeyParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSAKeyParserTests.swift; sourceTree = "<group>"; };
 		BBDFECBD2687352200BCDB19 /* KeyFormats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyFormats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBDFECC02687352200BCDB19 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BBDFECC12687352200BCDB19 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -92,6 +100,10 @@
 				BBDFECF3268B9DC500BCDB19 /* Standard */,
 				BBDFECF5268B9E6100BCDB19 /* NSData+Parsing.h */,
 				BBDFECF6268B9E6100BCDB19 /* NSData+Parsing.m */,
+				BB2E7563268BB1B80073C5DB /* RSAKeyParser.h */,
+				BB2E7564268BB1B80073C5DB /* RSAKeyParser.m */,
+				BB2E7566268BB4F20073C5DB /* NSMutableData+TLV.h */,
+				BB2E7567268BB4F20073C5DB /* NSMutableData+TLV.m */,
 			);
 			path = KeyFormats;
 			sourceTree = "<group>";
@@ -102,6 +114,7 @@
 				BBDFECDC2687352500BCDB19 /* KeyFormatsTests.m */,
 				BBDFECF9268BA54200BCDB19 /* NSData+ParsingTests.swift */,
 				BBDFECF8268BA54100BCDB19 /* KeyFormatsTests-Bridging-Header.h */,
+				BB2E7569268BC2DC0073C5DB /* RSAKeyParserTests.swift */,
 			);
 			path = KeyFormatsTests;
 			sourceTree = "<group>";
@@ -228,7 +241,9 @@
 				BBDFECC82687352200BCDB19 /* ViewController.m in Sources */,
 				BBDFECC22687352200BCDB19 /* AppDelegate.m in Sources */,
 				BBDFECD32687352500BCDB19 /* main.m in Sources */,
+				BB2E7565268BB1B80073C5DB /* RSAKeyParser.m in Sources */,
 				BBDFECF7268B9E6100BCDB19 /* NSData+Parsing.m in Sources */,
+				BB2E7568268BB4F20073C5DB /* NSMutableData+TLV.m in Sources */,
 				BBDFECC52687352200BCDB19 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +254,7 @@
 			files = (
 				BBDFECDD2687352500BCDB19 /* KeyFormatsTests.m in Sources */,
 				BBDFECFA268BA54200BCDB19 /* NSData+ParsingTests.swift in Sources */,
+				BB2E756A268BC2DC0073C5DB /* RSAKeyParserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
