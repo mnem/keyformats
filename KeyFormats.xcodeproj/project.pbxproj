@@ -15,18 +15,12 @@
 		BBDFECD02687352500BCDB19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBDFECCE2687352500BCDB19 /* LaunchScreen.storyboard */; };
 		BBDFECD32687352500BCDB19 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBDFECD22687352500BCDB19 /* main.m */; };
 		BBDFECDD2687352500BCDB19 /* KeyFormatsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BBDFECDC2687352500BCDB19 /* KeyFormatsTests.m */; };
-		BBDFECE72687352500BCDB19 /* KeyFormatsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BBDFECE62687352500BCDB19 /* KeyFormatsUITests.m */; };
+		BBDFECF7268B9E6100BCDB19 /* NSData+Parsing.m in Sources */ = {isa = PBXBuildFile; fileRef = BBDFECF6268B9E6100BCDB19 /* NSData+Parsing.m */; };
+		BBDFECFA268BA54200BCDB19 /* NSData+ParsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDFECF9268BA54200BCDB19 /* NSData+ParsingTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		BBDFECD92687352500BCDB19 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BBDFECB52687352100BCDB19 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BBDFECBC2687352100BCDB19;
-			remoteInfo = KeyFormats;
-		};
-		BBDFECE32687352500BCDB19 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BBDFECB52687352100BCDB19 /* Project object */;
 			proxyType = 1;
@@ -50,8 +44,10 @@
 		BBDFECD22687352500BCDB19 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BBDFECD82687352500BCDB19 /* KeyFormatsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyFormatsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBDFECDC2687352500BCDB19 /* KeyFormatsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyFormatsTests.m; sourceTree = "<group>"; };
-		BBDFECE22687352500BCDB19 /* KeyFormatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyFormatsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBDFECE62687352500BCDB19 /* KeyFormatsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyFormatsUITests.m; sourceTree = "<group>"; };
+		BBDFECF5268B9E6100BCDB19 /* NSData+Parsing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Parsing.h"; sourceTree = "<group>"; };
+		BBDFECF6268B9E6100BCDB19 /* NSData+Parsing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Parsing.m"; sourceTree = "<group>"; };
+		BBDFECF8268BA54100BCDB19 /* KeyFormatsTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KeyFormatsTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		BBDFECF9268BA54200BCDB19 /* NSData+ParsingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSData+ParsingTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,13 +65,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BBDFECDF2687352500BCDB19 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,7 +73,6 @@
 			children = (
 				BBDFECBF2687352200BCDB19 /* KeyFormats */,
 				BBDFECDB2687352500BCDB19 /* KeyFormatsTests */,
-				BBDFECE52687352500BCDB19 /* KeyFormatsUITests */,
 				BBDFECBE2687352200BCDB19 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,7 +82,6 @@
 			children = (
 				BBDFECBD2687352200BCDB19 /* KeyFormats.app */,
 				BBDFECD82687352500BCDB19 /* KeyFormatsTests.xctest */,
-				BBDFECE22687352500BCDB19 /* KeyFormatsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,17 +89,9 @@
 		BBDFECBF2687352200BCDB19 /* KeyFormats */ = {
 			isa = PBXGroup;
 			children = (
-				BBDFECC02687352200BCDB19 /* AppDelegate.h */,
-				BBDFECC12687352200BCDB19 /* AppDelegate.m */,
-				BBDFECC32687352200BCDB19 /* SceneDelegate.h */,
-				BBDFECC42687352200BCDB19 /* SceneDelegate.m */,
-				BBDFECC62687352200BCDB19 /* ViewController.h */,
-				BBDFECC72687352200BCDB19 /* ViewController.m */,
-				BBDFECC92687352200BCDB19 /* Main.storyboard */,
-				BBDFECCC2687352500BCDB19 /* Assets.xcassets */,
-				BBDFECCE2687352500BCDB19 /* LaunchScreen.storyboard */,
-				BBDFECD12687352500BCDB19 /* Info.plist */,
-				BBDFECD22687352500BCDB19 /* main.m */,
+				BBDFECF3268B9DC500BCDB19 /* Standard */,
+				BBDFECF5268B9E6100BCDB19 /* NSData+Parsing.h */,
+				BBDFECF6268B9E6100BCDB19 /* NSData+Parsing.m */,
 			);
 			path = KeyFormats;
 			sourceTree = "<group>";
@@ -121,16 +100,28 @@
 			isa = PBXGroup;
 			children = (
 				BBDFECDC2687352500BCDB19 /* KeyFormatsTests.m */,
+				BBDFECF9268BA54200BCDB19 /* NSData+ParsingTests.swift */,
+				BBDFECF8268BA54100BCDB19 /* KeyFormatsTests-Bridging-Header.h */,
 			);
 			path = KeyFormatsTests;
 			sourceTree = "<group>";
 		};
-		BBDFECE52687352500BCDB19 /* KeyFormatsUITests */ = {
+		BBDFECF3268B9DC500BCDB19 /* Standard */ = {
 			isa = PBXGroup;
 			children = (
-				BBDFECE62687352500BCDB19 /* KeyFormatsUITests.m */,
+				BBDFECC02687352200BCDB19 /* AppDelegate.h */,
+				BBDFECC12687352200BCDB19 /* AppDelegate.m */,
+				BBDFECCC2687352500BCDB19 /* Assets.xcassets */,
+				BBDFECD12687352500BCDB19 /* Info.plist */,
+				BBDFECCE2687352500BCDB19 /* LaunchScreen.storyboard */,
+				BBDFECD22687352500BCDB19 /* main.m */,
+				BBDFECC92687352200BCDB19 /* Main.storyboard */,
+				BBDFECC32687352200BCDB19 /* SceneDelegate.h */,
+				BBDFECC42687352200BCDB19 /* SceneDelegate.m */,
+				BBDFECC62687352200BCDB19 /* ViewController.h */,
+				BBDFECC72687352200BCDB19 /* ViewController.m */,
 			);
-			path = KeyFormatsUITests;
+			name = Standard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,24 +162,6 @@
 			productReference = BBDFECD82687352500BCDB19 /* KeyFormatsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		BBDFECE12687352500BCDB19 /* KeyFormatsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BBDFECF02687352500BCDB19 /* Build configuration list for PBXNativeTarget "KeyFormatsUITests" */;
-			buildPhases = (
-				BBDFECDE2687352500BCDB19 /* Sources */,
-				BBDFECDF2687352500BCDB19 /* Frameworks */,
-				BBDFECE02687352500BCDB19 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BBDFECE42687352500BCDB19 /* PBXTargetDependency */,
-			);
-			name = KeyFormatsUITests;
-			productName = KeyFormatsUITests;
-			productReference = BBDFECE22687352500BCDB19 /* KeyFormatsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -203,10 +176,7 @@
 					};
 					BBDFECD72687352500BCDB19 = {
 						CreatedOnToolsVersion = 13.0;
-						TestTargetID = BBDFECBC2687352100BCDB19;
-					};
-					BBDFECE12687352500BCDB19 = {
-						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 						TestTargetID = BBDFECBC2687352100BCDB19;
 					};
 				};
@@ -226,7 +196,6 @@
 			targets = (
 				BBDFECBC2687352100BCDB19 /* KeyFormats */,
 				BBDFECD72687352500BCDB19 /* KeyFormatsTests */,
-				BBDFECE12687352500BCDB19 /* KeyFormatsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -249,13 +218,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BBDFECE02687352500BCDB19 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -266,6 +228,7 @@
 				BBDFECC82687352200BCDB19 /* ViewController.m in Sources */,
 				BBDFECC22687352200BCDB19 /* AppDelegate.m in Sources */,
 				BBDFECD32687352500BCDB19 /* main.m in Sources */,
+				BBDFECF7268B9E6100BCDB19 /* NSData+Parsing.m in Sources */,
 				BBDFECC52687352200BCDB19 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,14 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBDFECDD2687352500BCDB19 /* KeyFormatsTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BBDFECDE2687352500BCDB19 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BBDFECE72687352500BCDB19 /* KeyFormatsUITests.m in Sources */,
+				BBDFECFA268BA54200BCDB19 /* NSData+ParsingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,11 +249,6 @@
 			isa = PBXTargetDependency;
 			target = BBDFECBC2687352100BCDB19 /* KeyFormats */;
 			targetProxy = BBDFECD92687352500BCDB19 /* PBXContainerItemProxy */;
-		};
-		BBDFECE42687352500BCDB19 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BBDFECBC2687352100BCDB19 /* KeyFormats */;
-			targetProxy = BBDFECE32687352500BCDB19 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -372,7 +323,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -425,7 +376,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -491,6 +442,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A8NKHWJDUL;
@@ -505,6 +457,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.noiseandheat.apple.KeyFormatsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "KeyFormatsTests/KeyFormatsTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeyFormats.app/KeyFormats";
 			};
@@ -514,6 +469,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A8NKHWJDUL;
@@ -528,50 +484,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.noiseandheat.apple.KeyFormatsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "KeyFormatsTests/KeyFormatsTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeyFormats.app/KeyFormats";
-			};
-			name = Release;
-		};
-		BBDFECF12687352500BCDB19 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = A8NKHWJDUL;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.noiseandheat.apple.KeyFormatsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = KeyFormats;
-			};
-			name = Debug;
-		};
-		BBDFECF22687352500BCDB19 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = A8NKHWJDUL;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.noiseandheat.apple.KeyFormatsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = KeyFormats;
 			};
 			name = Release;
 		};
@@ -601,15 +517,6 @@
 			buildConfigurations = (
 				BBDFECEE2687352500BCDB19 /* Debug */,
 				BBDFECEF2687352500BCDB19 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BBDFECF02687352500BCDB19 /* Build configuration list for PBXNativeTarget "KeyFormatsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BBDFECF12687352500BCDB19 /* Debug */,
-				BBDFECF22687352500BCDB19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
